@@ -6,23 +6,14 @@
     This script reads environment flags (for example, passed from an external system)
     to determine which IE cache deletion actions to perform. For each flagged action,
     it executes the appropriate RunDll32.exe command with a specific numeric code.
-    All operations, including successes and errors, are logged to a file located in the user's TEMP folder.
+    Logs are saved to user's TEMP folder.
+    This script needs to be executed as user.
+
+.PARAMETER
+todo: Add parameters for custom log file path, etc.
 
 .NOTES
-    This script needs to be executed as a user.
-    Author: Hart Hoppe
-    Date: 2025-02-20
-    Version: 1.0
-
-.AUTHOR
-   Hart Hoppe
-
-.DATE
-   2025-02-19
-
-.VERSION
-   1.0
-   
+Author: Hart Hoppe
 #>
 
 $logFile = Join-Path $env:TEMP "Delete-IECache_Data.log"
