@@ -9,9 +9,6 @@
     Logs are saved to user's TEMP folder.
     This script needs to be executed as user.
 
-.PARAMETER
-todo: Add parameters for custom log file path, etc.
-
 .NOTES
 Author: Hart Hoppe
 #>
